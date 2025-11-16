@@ -31,9 +31,15 @@ ods over baselines (by 18%↓ on average over three datasets).
 
 Please run the commands mentioned below to produce results:
 
-# Dataset UTKFace
+# Dataset UTKFace & Avocado & Temperature & IMDB
 
-```bash
-srun torchrun --standalone --nproc_per_node=gpu ./train/train_cifar.py --batch_size 64 --num_epochs 300 --base_lr 0.1
+For these four datasets, the only thing you need to do is to download all of the files and run:
 ```
+python ocp.py
+```
+and
+```
+python ocpPipeline.py
+```
+
 
