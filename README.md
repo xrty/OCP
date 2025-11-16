@@ -1,5 +1,5 @@
 # Min-CPS/Min-RCPS
----
+
 Ordinal classification has been widely applied in many high-
 stakes applications, e.g., medical imaging and diagnosis,
 where reliable uncertainty quantification (UQ) is essential for
@@ -30,3 +30,10 @@ ods over baselines (by 18%↓ on average over three datasets).
 ## Running instructions
 
 Please run the commands mentioned below to produce results:
+
+# Dataset UTKFace
+
+```bash
+srun torchrun --standalone --nproc_per_node=gpu ./train/train_cifar.py --batch_size 64 --num_epochs 300 --base_lr 0.1
+```
+
